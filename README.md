@@ -1,3 +1,7 @@
+# RITAI Website
+
+This project is to create a website for RITficial Intelligence, RIT's student run AI club. The website is build using bootstrap, Node.js and Angular.
+
 # `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
