@@ -27,4 +27,11 @@ body {
   background-color: #011F4D;
   color: white;
 }
+.navbar-brand {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  margin:0 auto;
+}
 
