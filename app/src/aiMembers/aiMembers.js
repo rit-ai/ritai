@@ -9,6 +9,10 @@ angular.module('myApp.aiMembers', ['ngRoute'])
   });
 }])
 
-.controller('AiMembersCtrl', [function() {
-
+.controller('AiMembersCtrl', ['$scope', function($scope) {
+    $scope.x = [{}];
+    $scope.copy = function() {
+        $scope.x.push({});
+    };
 }]);
+
