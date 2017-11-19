@@ -2,7 +2,7 @@
 <div class = "container-fluid">
 <div class="totalmembers" ng-controller="AiMembersCtrl">
 
-    <div class = "row">
+    <!-- <div class = "row"> -->
     <input class = "members" id="tab1" type="radio" name="tabs" checked>
     <label class = "members" for="tab1">Web Dev</label>
 
@@ -11,13 +11,12 @@
 
      <input class = "members" id="tab3" type="radio" name="tabs">
     <label class = "members" for="tab3">Serenade</label>
-    </div>
+    <!-- </div> -->
 
 
-  <div class = "content-members">
+  <div class = "membersbound">
       <div class = "row">
           <div class="col-sm-5">
-              <div class = "membersbound">
     <div id="Web-Dev">
       <div class="container">
           <table class="table table-bordered table-hover" id="1" ng-repeat = "x in firsttable">
@@ -41,12 +40,12 @@
         <button type="button" class="btn btn-default btn-block" ng-click="copy(firsttable)" onclick = "this.blur();">Click Me to Create Another Table!</button>
       </div>
             </div>
-              </div>
+              <!-- </div> -->
     </div>
       </div>
       <div class = "row">
           <div class="col-sm-5">
-              <div class = "membersbound">
+              <!-- <div class = "membersbound"> -->
               <div id="Smash-Block">
           <div class="container">
               <table class="table table-bordered table-hover" id="2" ng-repeat = "x in secondtable">
@@ -70,12 +69,12 @@
               <button type="button" class="btn btn-default btn-block" ng-click="copy(secondtable)" onclick = "this.blur();">Click Me to Create Another Table!</button>
           </div>
               </div>
-          </div>
+          <!-- </div> -->
           </div>
       </div>
       <div class = "row">
           <div class="col-sm-5">
-              <div class = "membersbound">
+              <!-- <div class = "membersbound"> -->
       <div id="Seranade">
           <div class="container">
               <table class="table table-bordered table-hover" id="3" ng-repeat = "x in thirdtable">
@@ -89,7 +88,7 @@
                   </thead>
                   <tbody>
                   <tr ng-repeat =" y in row3">
-                      <td>{{y.num}}</td>
+                      <td>{{"Hello world"}} <!-- y.num}}</td>-->
                       <td>{{y.fname}}</td>
                       <td>{{y.add}}</td>
                       <td>{{y.phone}}</td>
@@ -99,14 +98,9 @@
               <button type="button" class="btn btn-default btn-block" ng-click="copy(thirdtable)" onclick = "this.blur();">Click Me to Create Another Table!</button>
           </div>
               </div>
-              </div>
-          </div>
-          </div>
-      </div>
+      <!-- </div> -->
   </div>
 </div>
-
-
-
-
-
+  </div>
+</div>
+</div>
