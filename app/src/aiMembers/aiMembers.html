@@ -1,6 +1,106 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
-<div></div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class = "container-fluid">
+<div class="totalmembers" ng-controller="AiMembersCtrl">
+
+    <!-- <div class = "row"> -->
+    <input class = "members" id="tab1" type="radio" name="tabs" checked>
+    <label class = "members" for="tab1">Web Dev</label>
+
+    <input class = "members" id="tab2" type="radio" name="tabs">
+    <label class = "members" for="tab2">Smash Block</label>
+
+     <input class = "members" id="tab3" type="radio" name="tabs">
+    <label class = "members" for="tab3">Serenade</label>
+    <!-- </div> -->
+
+
+  <div class = "membersbound">
+      <div class = "row">
+          <div class="col-sm-5">
+    <div id="Web-Dev">
+      <div class="container">
+          <table class="table table-bordered table-hover" id="1" ng-repeat = "x in firsttable">
+              <thead>
+              <tr>
+                  <th>Number</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr ng-repeat =" y in row1">
+                  <td>{{y.num}}</td>
+                  <td>{{y.fname}}</td>
+                  <td>{{y.add}}</td>
+                  <td>{{y.phone}}</td>
+              </tr>
+              </tbody>
+          </table>
+        <button type="button" class="btn btn-default btn-block" ng-click="copy(firsttable)" onclick = "this.blur();">Click Me to Create Another Table!</button>
+      </div>
+            </div>
+              <!-- </div> -->
+    </div>
+      </div>
+      <div class = "row">
+          <div class="col-sm-5">
+              <!-- <div class = "membersbound"> -->
+              <div id="Smash-Block">
+          <div class="container">
+              <table class="table table-bordered table-hover" id="2" ng-repeat = "x in secondtable">
+                  <thead>
+                  <tr>
+                      <th>Number</th>
+                      <th>Name</th>
+                      <th>Address</th>
+                      <th>Phone</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr ng-repeat =" y in row2">
+                      <td>{{y.num}}</td>
+                      <td>{{y.fname}}</td>
+                      <td>{{y.add}}</td>
+                      <td>{{y.phone}}</td>
+                  </tr>
+                  </tbody>
+              </table>
+              <button type="button" class="btn btn-default btn-block" ng-click="copy(secondtable)" onclick = "this.blur();">Click Me to Create Another Table!</button>
+          </div>
+              </div>
+          <!-- </div> -->
+          </div>
+      </div>
+      <div class = "row">
+          <div class="col-sm-5">
+              <!-- <div class = "membersbound"> -->
+      <div id="Seranade">
+          <div class="container">
+              <table class="table table-bordered table-hover" id="3" ng-repeat = "x in thirdtable">
+                  <thead>
+                  <tr>
+                      <th>Number</th>
+                      <th>Name</th>
+                      <th>Address</th>
+                      <th>Phone</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr ng-repeat =" y in row3">
+                      <td>{{"Hello world"}} <!-- y.num}}</td>-->
+                      <td>{{y.fname}}</td>
+                      <td>{{y.add}}</td>
+                      <td>{{y.phone}}</td>
+                  </tr>
+                  </tbody>
+              </table>
+              <button type="button" class="btn btn-default btn-block" ng-click="copy(thirdtable)" onclick = "this.blur();">Click Me to Create Another Table!</button>
+          </div>
+              </div>
+      <!-- </div> -->
+  </div>
+</div>
+  </div>
+</div>
+</div>

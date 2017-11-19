@@ -23,3 +23,23 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+
+.totalmembers{ text-align:center;}
+.table > thead > tr> th{text-align: center;}
+.table > tbody > tr> td{text-align: center;}
+.btn.btn-default.btn-block{text-align: center;}
+
+.membersbound {background: #fff; color: #373737;}
+.membersbound > .row > .col-sm-5 > div {display: none; padding: 20px 25px 5px;}
+
+input.members {display: none;}
+label.members {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center; margin:auto;}
+label.members:hover {color: #24248f; cursor: pointer; background: #d3d3d3;}
+input.members:checked + label.members {background: #24248f; color: #fff;}
+
+#tab1:checked ~ .membersbound #Web-Dev,
+#tab2:checked ~ .membersbound #Smash-Block,
+#tab3:checked ~ .membersbound #Seranade {
+  display: block;
+}
